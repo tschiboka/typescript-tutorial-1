@@ -4,6 +4,8 @@ const UserForm = ({onAddUser}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (name && email) onAddUser({name, email});
+    setName("");
+    setEmail("");
   }
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

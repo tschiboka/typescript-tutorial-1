@@ -10,7 +10,6 @@ function App() {
   }
   return (
     <div className="App">
-      {console.log(users)}
       <div className="users">
         <UserForm onAddUser={onAddUser} />
         <UserList users={users} />

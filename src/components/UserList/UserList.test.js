@@ -11,6 +11,7 @@ function renderComponent() {
 }
 
 test("Render One Row Per User, Unpreferred Version", () => {
+    renderComponent();
     const rows = screen.getAllByRole("row"); // Finding All Rows in the Table Ambiguous
     expect(rows).toHaveLength(3);            // Add ONE for Header             
 });
